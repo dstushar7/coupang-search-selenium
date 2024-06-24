@@ -87,9 +87,8 @@ def hover_and_click_icons(driver):
     # Initialize ActionChains
     actions = ActionChains(driver)
     wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds for elements to be present
-    
-    count = 0
 
+    # Loop over each product
     for product in products:
         try:
             # Hover over the product image to reveal the icon
@@ -100,19 +99,17 @@ def hover_and_click_icons(driver):
             icon_xpath = ".//i[contains(@class, 'ap-sbi-btn-search__icon') and contains(@class, 'ap-icon-search')]"
             icon = wait.until(EC.presence_of_element_located((By.XPATH, icon_xpath)))
             icon.click()
-            time.sleep(1)  # Wait a bit for the close button to appear
+            time.sleep(3)  # Wait a bit for the close button to appear
             
             # Wait for the close button to be present and then click it
             close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
             close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_selector)))
             close_button.click()
-            time.sleep(1)  # Wait a bit between actions
+            time.sleep(3)  # Wait a bit between actions
 
-            count += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
 
-    return count
 
 def main():
     """
@@ -130,17 +127,12 @@ def main():
     try:
         close_tutorial_tab(driver)
         
-        total_clicks = 0
         for page in range(1, 12):
             url = (f"https://www.coupang.com/np/search?q={search_query}&"
                    f"isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
                    f"page={page}&rating={rating}&listSize={list_size}")
             navigate_to_url(driver, url)
-            clicks = hover_and_click_icons(driver)
-            total_clicks += clicks
-            print(f"Page {page}: Clicked {clicks} icons")
-        
-        print(f"Total icons clicked: {total_clicks}")
+            hover_and_click_icons(driver)
     finally:
         driver.quit()
 
