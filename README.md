@@ -28,7 +28,7 @@ python -m venv coupang
 
 ```bash
 # On Windows
-coup\Scripts\activate
+.\coup\Scripts\activate
 
 
 # On macOS/Linux
