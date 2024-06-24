@@ -70,6 +70,7 @@ def navigate_to_url(driver, url):
         driver (WebDriver): Initialized WebDriver.
         url (str): URL to navigate to.
     """
+    driver.delete_all_cookies()
     driver.get(url)
     time.sleep(2)  # Allow some time for the page to load and extension to initialize
 
@@ -99,13 +100,13 @@ def hover_and_click_icons(driver):
             icon_xpath = ".//i[contains(@class, 'ap-sbi-btn-search__icon') and contains(@class, 'ap-icon-search')]"
             icon = wait.until(EC.presence_of_element_located((By.XPATH, icon_xpath)))
             icon.click()
-            time.sleep(3)  # Wait a bit for the close button to appear
+            time.sleep(2)  # Wait a bit for the close button to appear
             
             # Wait for the close button to be present and then click it
             close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
             close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_selector)))
             close_button.click()
-            time.sleep(3)  # Wait a bit between actions
+            time.sleep(2)  # Wait a bit between actions
 
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
@@ -133,6 +134,7 @@ def main():
                    f"page={page}&rating={rating}&listSize={list_size}")
             navigate_to_url(driver, url)
             hover_and_click_icons(driver)
+            time.sleep(2)
     finally:
         driver.quit()
 
