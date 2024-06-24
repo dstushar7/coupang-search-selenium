@@ -3,6 +3,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 # Path to your ChromeDriver executable
@@ -38,6 +40,7 @@ def initialize_driver(chrome_driver_path, chrome_options):
     """
     service = Service(chrome_driver_path)
     driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver.maximize_window()
     return driver
 
 def close_tutorial_tab(driver):
@@ -47,7 +50,7 @@ def close_tutorial_tab(driver):
     Args:
         driver (WebDriver): Initialized WebDriver.
     """
-    time.sleep(10)  # Wait for 10 seconds to allow the tutorial tab to open
+    time.sleep(5)  # Wait for 5 seconds to allow the tutorial tab to open
     
     original_window = driver.current_window_handle
     all_windows = driver.window_handles
@@ -68,11 +71,11 @@ def navigate_to_url(driver, url):
         url (str): URL to navigate to.
     """
     driver.get(url)
-    time.sleep(5)  # Allow some time for the page to load and extension to initialize
+    time.sleep(2)  # Allow some time for the page to load and extension to initialize
 
 def hover_and_click_icons(driver):
     """
-    Hover over each product to reveal and click the extension icons.
+    Hover over each product image to reveal and click the extension icons.
     
     Args:
         driver (WebDriver): Initialized WebDriver.
@@ -83,41 +86,61 @@ def hover_and_click_icons(driver):
     
     # Initialize ActionChains
     actions = ActionChains(driver)
+    wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds for elements to be present
     
-    for product in products:
-        # Hover over the product to reveal the icon
-        actions.move_to_element(product).perform()
-        time.sleep(1)  # Wait a bit to ensure the icon appears
-        
-        try:
-            # Click the revealed icon using the provided XPath
-            icon_xpath = ".//i[contains(@class, 'ap-sbi-btn-search__icon') and contains(@class, 'ap-icon-search')]"  # Update to match your specific structure
-            icon = driver.find_element(By.XPATH, icon_xpath)
-            icon.click()
-            time.sleep(1)  # Wait a bit between clicks
+    count = 0
 
-            # Click the close button using its class
-            close_button_selector = ".ap-sbi-aside-btn-close.ap-icon-close-circle"
-            close_button = driver.find_element(By.CSS_SELECTOR, close_button_selector)
+    for product in products:
+        try:
+            # Hover over the product image to reveal the icon
+            image = product.find_element(By.XPATH, ".//img")
+            actions.move_to_element(image).perform()
+            
+            # Wait for the icon to be present and then click it
+            icon_xpath = ".//i[contains(@class, 'ap-sbi-btn-search__icon') and contains(@class, 'ap-icon-search')]"
+            icon = wait.until(EC.presence_of_element_located((By.XPATH, icon_xpath)))
+            icon.click()
+            time.sleep(1)  # Wait a bit for the close button to appear
+            
+            # Wait for the close button to be present and then click it
+            close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
+            close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_selector)))
             close_button.click()
             time.sleep(1)  # Wait a bit between actions
+
+            count += 1
         except Exception as e:
-            print(f"Could not click the icon for a product: {e}")
+            print(f"Could not click the icon or close button for a product: {e}")
+
+    return count
 
 def main():
     """
     Main function to set up and run the Selenium script.
     """
     search_query = "laptop"
-    url = f"https://www.coupang.com/np/search?component=&q={search_query}&channel=user"
+    min_price = 30000
+    max_price = 31000
+    rating = 4
+    list_size = 72
     
     chrome_options = create_chrome_options(EXTENSION_PATH)
     driver = initialize_driver(CHROME_DRIVER_PATH, chrome_options)
     
     try:
         close_tutorial_tab(driver)
-        navigate_to_url(driver, url)
-        hover_and_click_icons(driver)
+        
+        total_clicks = 0
+        for page in range(1, 12):
+            url = (f"https://www.coupang.com/np/search?q={search_query}&"
+                   f"isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
+                   f"page={page}&rating={rating}&listSize={list_size}")
+            navigate_to_url(driver, url)
+            clicks = hover_and_click_icons(driver)
+            total_clicks += clicks
+            print(f"Page {page}: Clicked {clicks} icons")
+        
+        print(f"Total icons clicked: {total_clicks}")
     finally:
         driver.quit()
 
