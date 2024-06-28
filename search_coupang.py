@@ -50,7 +50,7 @@ def close_tutorial_tab(driver):
     Args:
         driver (WebDriver): Initialized WebDriver.
     """
-    time.sleep(5)  # Wait for 5 seconds to allow the tutorial tab to open
+    time.sleep(10)  # Wait for 10 seconds to allow the tutorial tab to open
     
     original_window = driver.current_window_handle
     all_windows = driver.window_handles
@@ -73,6 +73,22 @@ def navigate_to_url(driver, url):
     driver.delete_all_cookies()
     driver.get(url)
     time.sleep(2)  # Allow some time for the page to load and extension to initialize
+
+def write_result_to_file(result, filename="product_info.txt"):
+    """
+    Append the extracted product information to a text file.
+    
+    Args:
+        result (dict): Dictionary containing product information.
+        filename (str): Name of the file to write the results to.
+    """
+    with open(filename, "a", encoding="utf-8") as f:
+        f.write("------\n")
+        f.write(f"URL: {result['Product URL']}\n")
+        f.write(f"Title: {result['Product Title']}\n")
+        f.write(f"Price: {result['Product Price']}\n")
+        f.write(f"Image URL: {result['Product Image URL']}\n")
+        f.write("\n")
 
 def hover_and_click_icons(driver):
     """
@@ -100,7 +116,7 @@ def hover_and_click_icons(driver):
             icon_xpath = ".//i[contains(@class, 'ap-sbi-btn-search__icon') and contains(@class, 'ap-icon-search')]"
             icon = wait.until(EC.presence_of_element_located((By.XPATH, icon_xpath)))
             icon.click()
-            time.sleep(2)  # Wait a bit for the close button to appear
+            time.sleep(10)  # Wait a bit for the close button to appear
             
             # Wait for the close button to be present and then click it
             close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
@@ -108,9 +124,27 @@ def hover_and_click_icons(driver):
             close_button.click()
             time.sleep(2)  # Wait a bit between actions
 
+            # Extract product information
+            product_url = product.find_element(By.XPATH, ".//a").get_attribute("href")
+            product_title = product.find_element(By.XPATH, ".//div[contains(@class, 'name')]").text
+            product_price = product.find_element(By.XPATH, ".//strong[contains(@class, 'price-value')]").text
+            product_image_url = image.get_attribute("src")
+            
+            # Format the image URL correctly
+            if product_image_url.startswith("//"):
+                product_image_url = "https:" + product_image_url
+
+            result = {
+                "Product URL": product_url,
+                "Product Title": product_title,
+                "Product Price": product_price,
+                "Product Image URL": product_image_url
+            }
+
+            # Write the result to file
+            write_result_to_file(result)
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
-
 
 def main():
     """
@@ -124,7 +158,7 @@ def main():
     
     chrome_options = create_chrome_options(EXTENSION_PATH)
     driver = initialize_driver(CHROME_DRIVER_PATH, chrome_options)
-    
+
     try:
         close_tutorial_tab(driver)
         
