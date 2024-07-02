@@ -8,6 +8,37 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import pyperclip
 
+def get_increment(price):
+    """
+    Get the increment based on the current price.
+    
+    Args:
+        price (int): Current price.
+
+    Returns:
+        int: The increment value.
+    """
+    if price < 65000:
+        return 100
+    elif price < 80000:
+        return 200
+    elif price < 100000:
+        return 400
+    elif price < 130000:
+        return 500
+    elif price < 150000:
+        return 1000
+    elif price < 180000:
+        return 2000
+    elif price < 300000:
+        return 5000
+    elif price < 400000:
+        return 10000
+    elif price < 500000:
+        return 20000
+    else:
+        return None  # Stop at prices above the maximum price
+
 def create_chrome_options(extension_path):
     """
     Create Chrome options and add the extension.
