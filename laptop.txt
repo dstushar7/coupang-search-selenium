@@ -2,20 +2,20 @@ Product 1
 ------
 URL: https://www.coupang.com/vp/products/7945136082?itemId=21902163928&vendorItemId=88950182287
 Title: 스케이터 태블릿 케이스
-Price: 4,900
+Price: 4900.0
 Image URL: https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/00f9/abf14774f8c7e1bca678b08a0d241c78a48e4b0ebf90f42f6ab6bd205db5.jpg
 
-Product 2
+Product 1
 ------
-URL: https://www.coupang.com/vp/products/5654223104?itemId=9261992424&vendorItemId=76547565721
-Title: 디지티 프리미엄 노트북 거치대, 메탈블랙
-Price: 20,170
-Image URL: https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2021/06/10/14/3/3038cab0-a00a-4339-8f1a-8f4ce45bab5a.jpg
+URL: https://www.coupang.com/vp/products/7945136082?itemId=21902163928&vendorItemId=88950182287
+Title: 스케이터 태블릿 케이스
+Price: 4900.0
+Image URL: https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/00f9/abf14774f8c7e1bca678b08a0d241c78a48e4b0ebf90f42f6ab6bd205db5.jpg
 
-Product 3
+Product 1
 ------
 URL: https://www.coupang.com/vp/products/7030857538?itemId=17350754266&vendorItemId=84521097819
 Title: 노트북대여 노트북렌탈 저렴한 사무용 임대 렌탈 리스 렌트 재택 단기 한달 일산 파주 김포, 7일
-Price: 30,000
+Price: 30000.0
 Image URL: https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/c294/33e6b1e8984d687a04a57e1d8de7f8fd5cb2cc02173d5fb2f461552ad5a6.png
 

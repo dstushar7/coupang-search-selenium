@@ -74,7 +74,7 @@ def navigate_to_url(driver, url):
     driver.get(url)
     time.sleep(2)  # Allow some time for the page to load and extension to initialize
 
-def write_result_to_file(result, filename,product_number):
+def write_result_to_file(result, filename, product_number):
     """
     Append the extracted product information to a text file.
     
@@ -91,6 +91,52 @@ def write_result_to_file(result, filename,product_number):
         f.write(f"Price: {result['Product Price']}\n")
         f.write(f"Image URL: {result['Product Image URL']}\n")
         f.write("\n")
+        if 'Extension Products' in result:
+            for ext_product in result['Extension Products']:
+                f.write("------\n")
+                f.write(f"  Extension Product URL: {ext_product['Extension URL']}\n")
+                f.write(f"  Extension Product Title: {ext_product['Extension Title']}\n")
+                f.write(f"  Extension Product Price: {ext_product['Extension Price']}\n")
+                f.write(f"  Extension Product Margin: {ext_product['Extension Margin']}\n")
+                f.write(f"  Extension Product Image URL: {ext_product['Extension Image URL']}\n")
+                f.write("\n")
+
+def extract_extension_products(driver, main_product_price):
+    """
+    Extract information of extension products.
+    
+    Args:
+        driver (WebDriver): Initialized WebDriver.
+        main_product_price (float): Price of the main product.
+    
+    Returns:
+        List[dict]: List of dictionaries containing extension products information.
+    """
+    extension_products = []
+    extension_product_selector = "//div[@class='ap-list-cards alipriceAlibabaCN']//div[@class='ap-list-card']"
+    extension_product_elements = driver.find_elements(By.XPATH, extension_product_selector)
+    
+    for ext_product in extension_product_elements:
+        try:
+            extension_url = ext_product.find_element(By.XPATH, ".//a").get_attribute("href")
+            extension_title = ext_product.find_element(By.XPATH, ".//div[contains(@class, 'ap-product-title')]").text
+            extension_price = float(ext_product.find_element(By.XPATH, ".//div[contains(@class, 'ap-product-price')]").text.replace("¥", "").strip())
+            extension_image_url = ext_product.find_element(By.XPATH, ".//img").get_attribute("src")
+            
+            # Calculate margin
+            extension_margin = (main_product_price * 0.89) - (extension_price * 250)
+
+            extension_products.append({
+                "Extension URL": extension_url,
+                "Extension Title": extension_title,
+                "Extension Price": extension_price,
+                "Extension Margin": extension_margin,
+                "Extension Image URL": extension_image_url
+            })
+        except Exception as e:
+            print(f"Could not extract extension product information: {e}")
+
+    return extension_products
 
 def hover_and_click_icons(driver, searchquery, start_product_number=1):
     """
@@ -98,6 +144,7 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
     
     Args:
         driver (WebDriver): Initialized WebDriver.
+        start_product_number (int): The starting number for the product.
     """
     # Select all product elements
     product_selector = "//ul[@id='productList']//li"
@@ -119,18 +166,12 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
             icon_xpath = ".//i[contains(@class, 'ap-sbi-btn-search__icon') and contains(@class, 'ap-icon-search')]"
             icon = wait.until(EC.presence_of_element_located((By.XPATH, icon_xpath)))
             icon.click()
-            time.sleep(10)  # Wait a bit for the close button to appear
+            time.sleep(10)  # Wait a bit for the extension products to appear
             
-            # Wait for the close button to be present and then click it
-            close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
-            close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_selector)))
-            close_button.click()
-            time.sleep(2)  # Wait a bit between actions
-
-            # Extract product information
+            # Extract main product information
             product_url = product.find_element(By.XPATH, ".//a").get_attribute("href")
             product_title = product.find_element(By.XPATH, ".//div[contains(@class, 'name')]").text
-            product_price = product.find_element(By.XPATH, ".//strong[contains(@class, 'price-value')]").text
+            product_price = float(product.find_element(By.XPATH, ".//strong[contains(@class, 'price-value')]").text.replace(",", "").strip())
             product_image_url = image.get_attribute("src")
             
             # Format the image URL correctly
@@ -144,8 +185,11 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
                 "Product Image URL": product_image_url
             }
 
+            # Extract extension products information
+            result["Extension Products"] = extract_extension_products(driver, product_price)
+
             # Write the result to file
-            write_result_to_file(result,searchquery,product_number)
+            write_result_to_file(result, searchquery, product_number)
             product_number += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
@@ -168,10 +212,10 @@ def main():
         
         for page in range(1, 12):
             url = (f"https://www.coupang.com/np/search?q={search_query}&"
-                   f"isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
+                   f"filterSetByUser=true&channel=user&isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
                    f"page={page}&rating={rating}&listSize={list_size}")
             navigate_to_url(driver, url)
-            hover_and_click_icons(driver,search_query)
+            hover_and_click_icons(driver, search_query)
             time.sleep(2)
     finally:
         driver.quit()
