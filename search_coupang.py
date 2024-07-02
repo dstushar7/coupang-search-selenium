@@ -74,7 +74,7 @@ def navigate_to_url(driver, url):
     driver.get(url)
     time.sleep(2)  # Allow some time for the page to load and extension to initialize
 
-def write_result_to_file(result, filename="product_info.txt"):
+def write_result_to_file(result, filename,product_number):
     """
     Append the extracted product information to a text file.
     
@@ -82,7 +82,9 @@ def write_result_to_file(result, filename="product_info.txt"):
         result (dict): Dictionary containing product information.
         filename (str): Name of the file to write the results to.
     """
+    filename += ".txt"
     with open(filename, "a", encoding="utf-8") as f:
+        f.write(f"Product {product_number}\n")
         f.write("------\n")
         f.write(f"URL: {result['Product URL']}\n")
         f.write(f"Title: {result['Product Title']}\n")
@@ -90,7 +92,7 @@ def write_result_to_file(result, filename="product_info.txt"):
         f.write(f"Image URL: {result['Product Image URL']}\n")
         f.write("\n")
 
-def hover_and_click_icons(driver):
+def hover_and_click_icons(driver, searchquery, start_product_number=1):
     """
     Hover over each product image to reveal and click the extension icons.
     
@@ -106,6 +108,7 @@ def hover_and_click_icons(driver):
     wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds for elements to be present
 
     # Loop over each product
+    product_number = start_product_number
     for product in products:
         try:
             # Hover over the product image to reveal the icon
@@ -142,7 +145,8 @@ def hover_and_click_icons(driver):
             }
 
             # Write the result to file
-            write_result_to_file(result)
+            write_result_to_file(result,searchquery,product_number)
+            product_number += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
 
@@ -167,7 +171,7 @@ def main():
                    f"isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
                    f"page={page}&rating={rating}&listSize={list_size}")
             navigate_to_url(driver, url)
-            hover_and_click_icons(driver)
+            hover_and_click_icons(driver,search_query)
             time.sleep(2)
     finally:
         driver.quit()
