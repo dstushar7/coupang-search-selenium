@@ -8,12 +8,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import pyperclip
 
-# Path to your ChromeDriver executable
-CHROME_DRIVER_PATH = "./chromedriver.exe"
-
-# Path to your Chrome extension .crx file
-EXTENSION_PATH = "./AliPrice-Shopping-Assistant-for-1688.crx"
-
 def create_chrome_options(extension_path):
     """
     Create Chrome options and add the extension.
@@ -141,6 +135,7 @@ def extract_extension_products_from_table(driver, main_product_price):
                 extension_products.append({
                     "Extension Title": extension_title,
                     "Extension Price": extension_price,
+                    "Extension Sales Volume": extension_sales_volume,
                     "Extension Margin": extension_margin,
                     "Extension Image URL": extension_image_url,
                     "Extension URL": extension_url
@@ -149,7 +144,6 @@ def extract_extension_products_from_table(driver, main_product_price):
             print(f"Could not extract extension product information: {e}")
 
     return extension_products
-
 
 def hover_and_click_icons(driver, searchquery, start_product_number=1):
     """
@@ -221,29 +215,3 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
             product_number += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
-
-def main():
-    search_query = "laptop"
-    min_price = 30000
-    max_price = 31000
-    rating = 4
-    list_size = 72
-    
-    chrome_options = create_chrome_options(EXTENSION_PATH)
-    driver = initialize_driver(CHROME_DRIVER_PATH, chrome_options)
-
-    try:
-        close_tutorial_tab(driver)
-        
-        for page in range(1, 12):
-            url = (f"https://www.coupang.com/np/search?q={search_query}&"
-                   f"filterSetByUser=true&channel=user&isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
-                   f"page={page}&rating={rating}&listSize={list_size}")
-            navigate_to_url(driver, url)
-            hover_and_click_icons(driver, search_query)
-            time.sleep(2)
-    finally:
-        driver.quit()
-
-if __name__ == "__main__":
-    main()
