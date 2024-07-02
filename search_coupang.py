@@ -130,7 +130,7 @@ def main():
         
         for page in range(1, 12):
             url = (f"https://www.coupang.com/np/search?q={search_query}&"
-                   f"isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
+                   f"filterSetByUser=true&channel=user&isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
                    f"page={page}&rating={rating}&listSize={list_size}")
             navigate_to_url(driver, url)
             hover_and_click_icons(driver)
