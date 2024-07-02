@@ -1,434 +1,187 @@
 Product 1
 ------
-URL: https://www.coupang.com/vp/products/7030857538?itemId=17350754266&vendorItemId=84521097819
-Title: 노트북대여 노트북렌탈 저렴한 사무용 임대 렌탈 리스 렌트 재택 단기 한달 일산 파주 김포, 7일
-Price: 30000.0
-Image URL: https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/c294/33e6b1e8984d687a04a57e1d8de7f8fd5cb2cc02173d5fb2f461552ad5a6.png
+URL: https://www.coupang.com/vp/products/7945136082?itemId=21902163928&vendorItemId=88950182287
+Title: 스케이터 태블릿 케이스
+Price: 4900.0
+Image URL: https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/00f9/abf14774f8c7e1bca678b08a0d241c78a48e4b0ebf90f42f6ab6bd205db5.jpg
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 得力A4谱夹乐谱文件夹透明插页钢琴谱夹子歌谱批发可爱多层资料册
-  Extension Product Price: 6.94
-  Extension Product Margin: 24965.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01GYW6Xb1gC8Zd7a96q_!!2212800174105-0-cib.jpg
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 日式便当包铝箔简约保温饭盒袋牛津布大容量加厚手提便当包午餐包
+  Extension Product Price: 2.8
+  Extension Product Margin: 3661.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: A5白板笔记本易擦易写皮质双面记事白板本草稿纸便携学生pu写字板
-  Extension Product Price: 1.98
-  Extension Product Margin: 26205.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN0152TeSJ265QzzsRzvq_!!2212746937610-0-cib.jpg
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: Z家2024新款潮流儿童包婴童 米妮老鼠印花双肩背包 1533330 050
+  Extension Product Price: 15.9
+  Extension Product Margin: 386.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: A5可擦写白板笔记本套装A4磁吸学生白板皮质计划板办公备忘写字板
-  Extension Product Price: 12.5
-  Extension Product Margin: 23575.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01gLfsd61yCHuysl5yf_!!2200736276542-0-cib.jpg
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 阳离子小熊标午餐包上班带饭便携手提保温便当包亚马逊热销饭盒袋
+  Extension Product Price: 2.9
+  Extension Product Margin: 3636.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 凳脚地板家具静音特氟龙助滑垫降噪增滑桌子椅子脚垫五金配件批发
-  Extension Product Price: 0.4
-  Extension Product Margin: 26600.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01osSwiS1qqZtYgGA0g_!!2217201875547-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 可擦写A5白板笔记本套装pu双面学生白板皮质计划板办公备忘写字板
-  Extension Product Price: 2.0
-  Extension Product Margin: 26200.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01oOLsgZ1To4SDIZYot_!!2211269542428-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 得力A4谱夹乐谱文件夹透明插页钢琴谱夹子歌谱批发可爱多层资料册
-  Extension Product Price: 6.87
-  Extension Product Margin: 24982.5
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01GYW6Xb1gC8Zd7a96q_!!2212800174105-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 莱恩纸品新方方小白手账本伞纸简约日记本加厚方形方格学生记事本
-  Extension Product Price: 23.9
-  Extension Product Margin: 20725.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01z8pGU522Y3C94T7FQ_!!2206929747131-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 得力72410风琴包乐素风格文件资料袋办公学生文件资料收纳A4分层
-  Extension Product Price: 15.0
-  Extension Product Margin: 22950.0
-  Extension Product Image URL: https://cbu01.alicdn.com/img/ibank/11185426985_1061765212.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 白板笔记本桌面记事板双面书写本可擦写备忘录草稿纸计划板学生
-  Extension Product Price: 9.91
-  Extension Product Margin: 24222.5
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN010jQwSr1HRpzskUUCP_!!2206865880755-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: Smart Huion Note X10 Digital Drawing Paper Tablet Handwritin
-  Extension Product Price: 40.0
-  Extension Product Margin: 16700.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01UTC6J21rAjMSJHLre_!!1006845591-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 白板笔记本A4可移动记录擦写方便草稿本记事本备忘录小白板
-  Extension Product Price: 10.18
-  Extension Product Margin: 24155.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01nbsVsS1bvPlXVgLdX_!!2215522393527-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 可擦写A5白板笔记本套装pu双面学生白板皮质计划板办公备忘写字板
-  Extension Product Price: 2.0
-  Extension Product Margin: 26200.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01cpIXnd1kdrDZGrjQt_!!2208311494707-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 小白板笔记本桌面记事板移动写字板可擦写迷你白板本备忘录草稿纸
-  Extension Product Price: 6.5
-  Extension Product Margin: 25075.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN015k4Mp929oGVjsqq8q_!!960968114-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 森里惠水彩本子230g细纹丙烯马克笔水彩专用速写摸鱼手账绘画本
-  Extension Product Price: 10.8
-  Extension Product Margin: 24000.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01JmvyL728tvsATmYgA_!!2217154767991-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 适用于13.3英寸三星Galaxy Book Ion 2020款笔记本外壳贴膜930XCJ
-  Extension Product Price: 8.0
-  Extension Product Margin: 24700.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN011zatHv2EqAK0O78ca_!!2217293538795-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 适用13.3英寸适用于三星Galaxy Book Ion 2020款笔记本外壳贴膜93
-  Extension Product Price: 8.0
-  Extension Product Margin: 24700.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN0186juMV2Ldyyld0PZQ_!!938779716-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 彪马 万斯鞋盒纸盒 板鞋跑步鞋包装盒礼品盒
-  Extension Product Price: 4.0
-  Extension Product Margin: 25700.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN016mmW6D2CwuvEOXZpl_!!2217255438539-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 家具助滑垫餐桌沙发移动凳子桌椅脚垫椅子地板保护静音垫电器滑块
-  Extension Product Price: 0.4
-  Extension Product Margin: 26600.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01YU4Rde1F0h8bNnS83_!!2200727320425-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 旅行包男大容量户外出差便携行李袋干湿分离收纳袋休闲运动健身包
-  Extension Product Price: 35.0
-  Extension Product Margin: 17950.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN011CeqTF1e6WiNOSYod_!!2217805623822-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 易飞白板笔记本桌面小白板A5可擦写本子桌面留言板写字板草稿黑板
-  Extension Product Price: 29.9
-  Extension Product Margin: 19225.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01J3fnNc1Utr9mlUlzj_!!2216761162576-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: A5白板笔记本易擦易写皮质双面记事白板本草稿纸便携学生pu写字板
-  Extension Product Price: 2.0
-  Extension Product Margin: 26200.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01L0d1hb1vNmy09Awk3_!!2208154086161-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 自粘带孔带钉特氟龙助滑垫桌椅茶几腿脚垫椅子脚钉增滑垫家具配件
-  Extension Product Price: 0.4
-  Extension Product Margin: 26600.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01KNyCwt1qqZvd42yIz_!!2217201875547-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: a4素面镭射喷墨打印纸不干胶透明a3新款镭射素面平光银彩喷墨防水
-  Extension Product Price: 0.6
-  Extension Product Margin: 26550.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01YEb6Uc2NAmvLi1Sk1_!!2200570189923-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 包装盒鞋巴黎衣服子袋子围巾防尘布手提袋皮带礼品袋balencia包包
-  Extension Product Price: 16.0
-  Extension Product Margin: 22700.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN019z5FWT29jEGM8r2CG_!!2217572798103-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 方方小白本笔记本子原创设计简约少女心日记本网红方形手账本网格
-  Extension Product Price: 29.9
-  Extension Product Margin: 19225.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01v0b3J22NCcdnG1jRe_!!2214235809927-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 适用于2024华为MateBook14外壳膜FLMH-16保护膜2023款KLVF-16贴纸
-  Extension Product Price: 3.0
-  Extension Product Margin: 25950.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01rndkPz2Ldz8FxF7vd_!!938779716-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 多用途马克笔假笔私房钱分流安全笔用于藏东西贵重物品藏钱储物
-  Extension Product Price: 10.0
-  Extension Product Margin: 24200.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01estXII1bRBkFHdkqc_!!2216259283461-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 无线遥控开关双控免布线面板家用电灯远程随意贴220v控制器智能
-  Extension Product Price: 17.0
-  Extension Product Margin: 22450.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01rQ4iFR29OA3lAPU7A_!!3304858057-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 小白板笔记本桌面记事板迷你白板A5可擦写备忘录草稿纸计划板
-  Extension Product Price: 2.0
-  Extension Product Margin: 26200.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01dkPlNi1tlUEhrtZIX_!!2215282615942-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 小白板草稿纸皮质记事板写字板可擦A5便携式笔记手写板A4白白板本
-  Extension Product Price: 13.8
-  Extension Product Margin: 23250.0
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01aIX2zP1UEdTlShIt9_!!2216113202486-0-cib.jpg
-
-Product 2
-------
-URL: https://www.coupang.com/vp/products/5654223104?itemId=9261992424&vendorItemId=76547565721
-Title: 디지티 프리미엄 노트북 거치대, 메탈블랙
-Price: 20170.0
-Image URL: https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2021/06/10/14/3/3038cab0-a00a-4339-8f1a-8f4ce45bab5a.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 铝合金笔记本电脑支架 可调节便携折叠升降桌面增高托架平板支架
-  Extension Product Price: 34.0
-  Extension Product Margin: 9451.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01ulYXxI1Q9osV9NtBs_!!2206849261934-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 晶华铝合金笔记本电脑支架隐形托架迷你通用增高悬空散热平板支架
-  Extension Product Price: 12.8
-  Extension Product Margin: 14751.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01sxyjcu1dbqAJ7A0ej_!!3847953755-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本电脑支架双层托架铝合金桌面增高散热折叠升降便携支撑架子
-  Extension Product Price: 12.8
-  Extension Product Margin: 14751.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01vkikta1Pmv60O52Ox_!!2215691401884-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本电脑支架托架桌面增高支撑架散热器便携式调节手提升降底座
-  Extension Product Price: 3.25
-  Extension Product Margin: 17138.8
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01MfF4uX1log0hTrbCM_!!2213137874866-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: N3笔记本支架铝合金多功能折叠立式支撑架便携收纳散热电脑支架
-  Extension Product Price: 2.0
-  Extension Product Margin: 17451.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01AgslGW1epPX4u8mZF_!!2217696063920-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: N8电脑支架双层便捷增高型铝合金笔记本支架立式金属升降折叠支架
-  Extension Product Price: 25.0
-  Extension Product Margin: 11701.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01MoneCC2DUo93NWJQN_!!2200789348613-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 电脑支架批发便携折叠升降立式桌面办公N3铝合金笔记本散热支撑架
-  Extension Product Price: 6.0
-  Extension Product Margin: 16451.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01tCVNAH2DUo6Q2vAnM_!!2200789348613-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 电脑支架笔记本支架N8铝合金笔记本电脑双层支架散热支架底座折叠
-  Extension Product Price: 38.5
-  Extension Product Margin: 8326.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01Yfmdax1Riug5juCyX_!!2212864892146-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本电脑支架折叠升降便携散热架增高托物架收纳调节支撑架稳固
-  Extension Product Price: 1.8
-  Extension Product Margin: 17501.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01i6K8nD1uZrwwYeTx6_!!2217597886052-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: N3电脑笔记本支架铝合金平板托架办公通用升降折叠便携散热支撑架
-  Extension Product Price: 3.5
-  Extension Product Margin: 17076.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01LxbONg2IsEaLqStM2_!!2216333609341-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 二合一铝合金笔记本手机支架折叠便携升降散热平板手机电脑托架
-  Extension Product Price: 12.0
-  Extension Product Margin: 14951.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01SZAmpW1NZW8cINd3x_!!963911584-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 铝合金笔记本折叠支架电脑支撑架平板macbook游戏本升降散热底座
-  Extension Product Price: 28.0
-  Extension Product Margin: 10951.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01TRNZ9E1GDo8AuXAtt_!!2215915800589-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 折叠式铝合金便携升降卡扣式手提支架平板笔记本电脑桌面通用支架
-  Extension Product Price: 42.0
-  Extension Product Margin: 7451.299999999999
-  Extension Product Image URL: https://cbu01.alicdn.com/img/ibank/20893432345_859341257.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 铝合金笔记本电脑支架三叉双叉全兼容金属折叠收纳增高散热架通用
-  Extension Product Price: 13.0
-  Extension Product Margin: 14701.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01NEUxX22MnQltcC3Wd_!!2215357759872-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 跨境大号N3平板笔记本支架十档可调节便捷式折叠笔记本电脑增高架
-  Extension Product Price: 1.95
-  Extension Product Margin: 17463.8
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01NK4BWR1EXNvd0MGDO_!!2217746830361-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 新款笔记本电脑散热器支架四风扇超大风力静音七档位调节便捷收纳
-  Extension Product Price: 13.0
-  Extension Product Margin: 14701.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01UiUPcp2FMDwUgFkiI_!!2673628865-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 迪士尼笔记本支架 平板电脑支架 折叠升降立式散热底座n3支架批发
-  Extension Product Price: 16.9
-  Extension Product Margin: 13726.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01qTiaJZ1rkS770qXUS_!!2200744785669-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: N3铝合金笔记本电脑支架折叠散热增高托架便携式收纳升降平板支架
-  Extension Product Price: 1.9
-  Extension Product Margin: 17476.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01B41YRu1hJIbUKfs8M_!!2217704374256-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 惠普铝合金笔记本支架可折叠便携升降小巧散热笔记本增高托架批发
-  Extension Product Price: 39.0
-  Extension Product Margin: 8201.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01dWUN942JUFNJM5hS0_!!2212140239424-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本支架 铝合金电脑桌面平板支架折叠升降便携式散热托架批发
-  Extension Product Price: 5.0
-  Extension Product Margin: 16701.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01UiNUuO1USNIJbPzQ3_!!2206449222516-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 晶华 笔记本电脑支架桌面增高托架折叠升降便携底座办公专用散热
-  Extension Product Price: 12.0
-  Extension Product Margin: 14951.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN019ukq3t1SueeQGQlSg_!!2901972307-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 晶华笔记本电脑支架铝合金支架升降托架桌面电脑支架电脑散热
-  Extension Product Price: 36.0
-  Extension Product Margin: 8951.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01KHfFha1jqOMkH2Nlh_!!2927384599-0-cib.jpg
-
-------
-  Extension Product URL: TEST
-  Extension Product Title: 铝莱镁Z33铝合金笔记本电脑支架加宽加厚散热可折叠调节增高支架
+  Extension Product URL: https://cbu01.alicdn.com/O1CN01Zj7Xxk1I4leibv5jl_!!2217215400840-0-cib.jpg
+  Extension Product Title: 卡通书包小学生1-3-6年级儿童大容量防水轻便印花书包大学女可爱
   Extension Product Price: 26.0
-  Extension Product Margin: 11451.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01LugQ0I1FOy9NlrSPD_!!2209448040478-0-cib.jpg
+  Extension Product Margin: -2139.0
+  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01Zj7Xxk1I4leibv5jl_!!2217215400840-0-cib.jpg
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本电脑支架笔记本电脑支架托架桌面增高散热器折叠便携式支架
-  Extension Product Price: 5.9
-  Extension Product Margin: 16476.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01TRfaKm1OKgsn3KjXL_!!2845041687-0-cib.jpg
+  Extension Product URL: https://cbu01.alicdn.com/O1CN01lDA9IR1MQ4L5kxgv1_!!4028741428-0-cib.jpg
+  Extension Product Title: 日系少女心库洛便当包卡通可爱保温饭盒袋学生午餐袋玉桂狗手拎包
+  Extension Product Price: 13.0
+  Extension Product Margin: 1111.0
+  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01lDA9IR1MQ4L5kxgv1_!!4028741428-0-cib.jpg
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本电脑支架 铝合金桌面平板支架折叠升降便携式散热托架批发
-  Extension Product Price: 6.0
-  Extension Product Margin: 16451.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN017MGwOb1USNSHQCba4_!!2206449222516-0-cib.jpg
+  Extension Product URL: https://cbu01.alicdn.com/O1CN01jm34WH1MQ4TdLdCbl_!!4028741428-0-cib.jpg
+  Extension Product Title: 卡通汉顿半鱼人保温袋 学生饭盒袋 手拎便当包午餐包丑鱼铝箔餐包
+  Extension Product Price: 13.0
+  Extension Product Margin: 1111.0
+  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01jm34WH1MQ4TdLdCbl_!!4028741428-0-cib.jpg
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 惠普铝合金ZJ10笔记本银色支架可折叠便携升降小巧散热托架批发
-  Extension Product Price: 35.1
-  Extension Product Margin: 9176.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01yoHPTz2JUFHqR3tTD_!!2212140239424-0-cib.jpg
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 小红书hellokitty女生笔袋ins风大容量多层收纳袋痛包笔袋文具盒
+  Extension Product Price: 9.5
+  Extension Product Margin: 1986.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: N3铝合金笔记本电脑支架散热升降增高托便携桌面支撑架批发可折叠
-  Extension Product Price: 4.0
-  Extension Product Margin: 16951.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN011hGQwG1KDaSJPxBl0_!!2216869311130-0-cib.jpg
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 云栖梦ins高颜值大容量化妆包可爱卡通洗漱包旅行便携撞色收纳
+  Extension Product Price: 7.5
+  Extension Product Margin: 2486.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 电脑笔记本支架铝合金平板桌面支撑架折叠升降便携显示器散热托架
-  Extension Product Price: 3.6
-  Extension Product Margin: 17051.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01x4nciK1v2inW5Uro6_!!4157966115-0-cib.jpg
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 日韩卡通可爱Kitty猫大容量可折叠轻便购物袋单肩手提收纳包
+  Extension Product Price: 18.0
+  Extension Product Margin: -139.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本电脑支架托架铝合金便携桌面增高散热器可升降折叠立式支架
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 新款韩版防水防油保温保鲜饭盒包保温桶包上班手提便当包午餐包
+  Extension Product Price: 19.0
+  Extension Product Margin: -389.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 日系小恶魔学生书包 小学生文具袋书包袋轻便多层大号休闲双肩包
   Extension Product Price: 35.0
-  Extension Product Margin: 9201.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01S5Nb701xi3f6cp4rn_!!2200585726476-0-cib.jpg
+  Extension Product Margin: -4389.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 
-------
-  Extension Product URL: TEST
-  Extension Product Title: 笔记本支架 便携收纳平板支架 铝合金散热折叠支架 ABS笔记本支架
-  Extension Product Price: 3.3
-  Extension Product Margin: 17126.3
-  Extension Product Image URL: https://cbu01.alicdn.com/O1CN01BO7gCg1IIVItHB4nL_!!2211800490870-0-cib.jpg
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 日系小恶魔学生书包 小学生文具袋书包袋轻便多层大号休闲双肩包
+  Extension Product Price: 34.0
+  Extension Product Margin: -4139.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 英伦风复古女双肩包印花防水多功能学生书包休闲背包大容量电脑包
+  Extension Product Price: 68.0
+  Extension Product Margin: -12639.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 2024爆款小猫印花痛包笔袋可爱吧唧ins学生透明多层文具袋收纳包
+  Extension Product Price: 2.9
+  Extension Product Margin: 3636.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 外贸批发新款高级母婴包多功能时尚妈咪包休闲防泼水大容量双肩包
+  Extension Product Price: 25.0
+  Extension Product Margin: -1889.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 2024新款hellokitty出门行李包旅行包大容量加厚防震手提健身包潮
+  Extension Product Price: 30.0
+  Extension Product Margin: -3139.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 韩版新款可爱卡通少女风背包校园初中学生书包大容量外出旅行背包
+  Extension Product Price: 28.0
+  Extension Product Margin: -2639.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 现货日系卡通可爱Kitty猫大容量可折叠轻便购物袋单肩手提收纳包
+  Extension Product Price: 18.0
+  Extension Product Margin: -139.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 2024夏季新款印花库洛米单肩包大容量学生美乐蒂大容量手提包
+  Extension Product Price: 24.5
+  Extension Product Margin: -1764.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 新款大容量碎花儿童棉被收纳袋搬家打包衣物整理包便携被子斜挎包
+  Extension Product Price: 18.0
+  Extension Product Margin: -139.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 卡通可爱帆布单肩包包女熊猫印花通勤手提包大容量学生书包托特包
+  Extension Product Price: 24.0
+  Extension Product Margin: -1639.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 日单入园男女学生学补习琴谱拎包鞋iPad电脑公文包夹棉绗缝多花色
+  Extension Product Price: 24.0
+  Extension Product Margin: -1639.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 日系卡通库洛米大容量被子收纳袋学生宿舍棉被行李整理大号收纳包
+  Extension Product Price: 17.0
+  Extension Product Margin: 111.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 饭盒手提包防水保温袋冷藏袋铝箔加厚餐盒袋上班族带饭便当袋卡通
+  Extension Product Price: 4.7
+  Extension Product Margin: 3186.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 卡通可爱手拎书袋多重收纳文件袋学生手提补课包可爱大容量补习袋
+  Extension Product Price: 22.9
+  Extension Product Margin: -1364.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 2024新款可爱少女心帕恰狗书包女初高中大学生高颜值大容量双肩包
+  Extension Product Price: 13.0
+  Extension Product Margin: 1111.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 文件袋卡通加厚分格手提袋A4补习袋创意便携式档案袋大容量资料袋
+  Extension Product Price: 7.5
+  Extension Product Margin: 2486.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 卡通牛津布新款碎花铝箔保温饭盒袋学生餐包户外手提保鲜保冷袋
+  Extension Product Price: 9.5
+  Extension Product Margin: 1986.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 新款大容量碎花儿童棉被收纳袋搬家打包衣物整理包便携被子斜挎包
+  Extension Product Price: 18.0
+  Extension Product Margin: -139.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+
+  Extension Product URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+  Extension Product Title: 卡通INS宿舍家用棉被衣服收纳袋短途旅行手提包搬家打包袋行李袋
+  Extension Product Price: 19.0
+  Extension Product Margin: -389.0
+  Extension Product Image URL: data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
 

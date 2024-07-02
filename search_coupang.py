@@ -93,17 +93,16 @@ def write_result_to_file(result, filename, product_number):
         f.write("\n")
         if 'Extension Products' in result:
             for ext_product in result['Extension Products']:
-                f.write("------\n")
-                f.write(f"  Extension Product URL: {ext_product['Extension URL']}\n")
+                f.write(f"  Extension Product URL: {ext_product['Extension Image URL']}\n")
                 f.write(f"  Extension Product Title: {ext_product['Extension Title']}\n")
                 f.write(f"  Extension Product Price: {ext_product['Extension Price']}\n")
                 f.write(f"  Extension Product Margin: {ext_product['Extension Margin']}\n")
                 f.write(f"  Extension Product Image URL: {ext_product['Extension Image URL']}\n")
                 f.write("\n")
 
-def extract_extension_products(driver, main_product_price):
+def extract_extension_products_from_table(driver, main_product_price):
     """
-    Extract information of extension products.
+    Extract information of extension products from the table.
     
     Args:
         driver (WebDriver): Initialized WebDriver.
@@ -113,24 +112,23 @@ def extract_extension_products(driver, main_product_price):
         List[dict]: List of dictionaries containing extension products information.
     """
     extension_products = []
-    extension_product_selector = "//div[contains(@class, 'ap-list-cards--panel') and contains(@class, 'alipriceAlibabaCN')]//div[@class='ap-list-card']"
-    extension_product_elements = driver.find_elements(By.XPATH, extension_product_selector)
+    table_rows_selector = "//table/tbody/tr"
+    table_rows = driver.find_elements(By.XPATH, table_rows_selector)
     
-    for ext_product in extension_product_elements:
+    for row in table_rows:
         try:
-            # extension_url = ext_product.find_element(By.XPATH, ".//a").get_attribute("href")
-            extension_url = "TEST"
-            extension_title = ext_product.find_element(By.XPATH, ".//div[contains(@class, 'ap-product-title')]").text
-            extension_price = float(ext_product.find_element(By.XPATH, ".//div[contains(@class, 'ap-product-price')]").text.replace("¥", "").strip())
-            extension_image_url = ext_product.find_element(By.XPATH, ".//img").get_attribute("large")
+            extension_image = row.find_element(By.XPATH, ".//img")
+            extension_image_url = extension_image.get_attribute("src")
+            extension_title = row.find_element(By.XPATH, ".//div[@class='ap-copy-content__txt']").text
+            extension_price = float(row.find_element(By.XPATH, ".//td[3]/div").text.strip())
+            extension_sales_volume = int(row.find_element(By.XPATH, ".//td[4]/div").text.strip())
             
-            # Calculate margin
             extension_margin = (main_product_price * 0.89) - (extension_price * 250)
 
             extension_products.append({
-                "Extension URL": extension_url,
                 "Extension Title": extension_title,
                 "Extension Price": extension_price,
+                "Extension Sales Volume": extension_sales_volume,
                 "Extension Margin": extension_margin,
                 "Extension Image URL": extension_image_url
             })
@@ -141,41 +139,45 @@ def extract_extension_products(driver, main_product_price):
 
 def hover_and_click_icons(driver, searchquery, start_product_number=1):
     """
-    Hover over each product image to reveal and click the extension icons.
+    Hover over each product image to reveal and click the extension icons, then extract extension product details.
     
     Args:
         driver (WebDriver): Initialized WebDriver.
         start_product_number (int): The starting number for the product.
     """
-    # Select all product elements
     product_selector = "//ul[@id='productList']//li"
     products = driver.find_elements(By.XPATH, product_selector)
     
-    # Initialize ActionChains
     actions = ActionChains(driver)
     wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds for elements to be present
 
-    # Loop over each product
     product_number = start_product_number
     for product in products:
         try:
-            # Hover over the product image to reveal the icon
             image = product.find_element(By.XPATH, ".//img")
             actions.move_to_element(image).perform()
             
-            # Wait for the icon to be present and then click it
             icon_xpath = ".//i[contains(@class, 'ap-sbi-btn-search__icon') and contains(@class, 'ap-icon-search')]"
             icon = wait.until(EC.presence_of_element_located((By.XPATH, icon_xpath)))
             icon.click()
-            time.sleep(10)  # Wait a bit for the extension products to appear
+            time.sleep(10)
             
-            # Extract main product information
+            filter_button_xpath = "//button[contains(@class, 'ap-show-export-products-modal')]"
+            filter_button = wait.until(EC.presence_of_element_located((By.XPATH, filter_button_xpath)))
+            filter_button.click()
+            time.sleep(5)
+            
+            sales_volume_header_xpath = "//div[@title='' and contains(text(), 'Sales Volume')]"
+            sales_volume_header = wait.until(EC.presence_of_element_located((By.XPATH, sales_volume_header_xpath)))
+            sales_volume_header.click()
+            time.sleep(2)
+            sales_volume_header.click()
+            
             product_url = product.find_element(By.XPATH, ".//a").get_attribute("href")
             product_title = product.find_element(By.XPATH, ".//div[contains(@class, 'name')]").text
             product_price = float(product.find_element(By.XPATH, ".//strong[contains(@class, 'price-value')]").text.replace(",", "").strip())
             product_image_url = image.get_attribute("src")
             
-            # Format the image URL correctly
             if product_image_url.startswith("//"):
                 product_image_url = "https:" + product_image_url
 
@@ -186,26 +188,16 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
                 "Product Image URL": product_image_url
             }
 
-            # Extract extension products information
-            result["Extension Products"] = extract_extension_products(driver, product_price)
+            result["Extension Products"] = extract_extension_products_from_table(driver, product_price)
 
-            # Write the result to file
             write_result_to_file(result, searchquery, product_number)
 
-            # Wait for the close button to be present and then click it
-            close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
-            close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_selector)))
-            close_button.click()
-            time.sleep(2)  # Wait a bit between actions
-
+            
             product_number += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
 
 def main():
-    """
-    Main function to set up and run the Selenium script.
-    """
     search_query = "laptop"
     min_price = 30000
     max_price = 31000
@@ -220,7 +212,7 @@ def main():
         
         for page in range(1, 12):
             url = (f"https://www.coupang.com/np/search?q={search_query}&"
-                   f"filterSetByUser=true&channel=user&isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
+                   f"isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
                    f"page={page}&rating={rating}&listSize={list_size}")
             navigate_to_url(driver, url)
             hover_and_click_icons(driver, search_query)
