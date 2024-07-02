@@ -113,15 +113,16 @@ def extract_extension_products(driver, main_product_price):
         List[dict]: List of dictionaries containing extension products information.
     """
     extension_products = []
-    extension_product_selector = "//div[@class='ap-list-cards alipriceAlibabaCN']//div[@class='ap-list-card']"
+    extension_product_selector = "//div[contains(@class, 'ap-list-cards--panel') and contains(@class, 'alipriceAlibabaCN')]//div[@class='ap-list-card']"
     extension_product_elements = driver.find_elements(By.XPATH, extension_product_selector)
     
     for ext_product in extension_product_elements:
         try:
-            extension_url = ext_product.find_element(By.XPATH, ".//a").get_attribute("href")
+            # extension_url = ext_product.find_element(By.XPATH, ".//a").get_attribute("href")
+            extension_url = "TEST"
             extension_title = ext_product.find_element(By.XPATH, ".//div[contains(@class, 'ap-product-title')]").text
             extension_price = float(ext_product.find_element(By.XPATH, ".//div[contains(@class, 'ap-product-price')]").text.replace("¥", "").strip())
-            extension_image_url = ext_product.find_element(By.XPATH, ".//img").get_attribute("src")
+            extension_image_url = ext_product.find_element(By.XPATH, ".//img").get_attribute("large")
             
             # Calculate margin
             extension_margin = (main_product_price * 0.89) - (extension_price * 250)
@@ -190,6 +191,13 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
 
             # Write the result to file
             write_result_to_file(result, searchquery, product_number)
+
+            # Wait for the close button to be present and then click it
+            close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
+            close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_selector)))
+            close_button.click()
+            time.sleep(2)  # Wait a bit between actions
+
             product_number += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
