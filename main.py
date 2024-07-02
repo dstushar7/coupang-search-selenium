@@ -10,13 +10,13 @@ def main():
     # Define the parameters for the search
     search_query = "laptop"
     rating = 4
-    list_size = 72
-    min_page = 1
-    max_page = 12
+    list_size = 72 # Lowest is 10, highest is 72
+    min_page = 1 
+    max_page = 12 # Number of pages to be traversed
 
     # Initialize the starting price and maximum price
     min_price = 30000
-    max_dynamic_price = 500000  # Change this value as needed for different maximum price limits
+    max_dynamic_price = 500000  # Change this value as needed for different maximum price limits, 500000 is the maximum.
     max_price = min_price + get_increment(min_price)
 
     # Create Chrome options and initialize the driver
