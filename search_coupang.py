@@ -93,11 +93,12 @@ def write_result_to_file(result, filename, product_number):
         f.write("\n")
         if 'Extension Products' in result:
             for ext_product in result['Extension Products']:
-                f.write(f"  Extension Product URL: {ext_product['Extension Image URL']}\n")
-                f.write(f"  Extension Product Title: {ext_product['Extension Title']}\n")
-                f.write(f"  Extension Product Price: {ext_product['Extension Price']}\n")
-                f.write(f"  Extension Product Margin: {ext_product['Extension Margin']}\n")
-                f.write(f"  Extension Product Image URL: {ext_product['Extension Image URL']}\n")
+                f.write("------\n")
+                f.write(f"URL: {ext_product['Extension Image URL']}\n")
+                f.write(f"Title: {ext_product['Extension Title']}\n")
+                f.write(f"Price: {ext_product['Extension Price']}\n")
+                f.write(f"Margin: {ext_product['Extension Margin']}\n")
+                f.write(f"Image URL: {ext_product['Extension Image URL']}\n")
                 f.write("\n")
 
 def extract_extension_products_from_table(driver, main_product_price):
@@ -118,7 +119,7 @@ def extract_extension_products_from_table(driver, main_product_price):
     for row in table_rows:
         try:
             extension_image = row.find_element(By.XPATH, ".//img")
-            extension_image_url = extension_image.get_attribute("src")
+            extension_image_url = extension_image.get_attribute("data-src")
             extension_title = row.find_element(By.XPATH, ".//div[@class='ap-copy-content__txt']").text
             extension_price = float(row.find_element(By.XPATH, ".//td[3]/div").text.strip())
             extension_sales_volume = int(row.find_element(By.XPATH, ".//td[4]/div").text.strip())
@@ -191,8 +192,19 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
             result["Extension Products"] = extract_extension_products_from_table(driver, product_price)
 
             write_result_to_file(result, searchquery, product_number)
-
             
+            # Close the filter section of extension modal
+            close_button_xpath = "//div[@title='Close' and @class='ap-modal-close']"
+            close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_xpath)))
+            close_button.click()
+            time.sleep(2)
+
+
+            # Wait for the close button of extension modal to present and then click it
+            close_button_selector = ".//div[contains(@class, 'ap-sbi-aside-btn-close') and contains(@class, 'ap-icon-close-circle')]"
+            close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_selector)))
+            close_button.click()
+            time.sleep(2)  # Wait a bit between actions
             product_number += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
@@ -212,7 +224,7 @@ def main():
         
         for page in range(1, 12):
             url = (f"https://www.coupang.com/np/search?q={search_query}&"
-                   f"isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
+                   f"filterSetByUser=true&channel=user&isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
                    f"page={page}&rating={rating}&listSize={list_size}")
             navigate_to_url(driver, url)
             hover_and_click_icons(driver, search_query)
