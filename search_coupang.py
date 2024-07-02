@@ -94,7 +94,7 @@ def write_result_to_file(result, filename, product_number):
         if 'Extension Products' in result:
             for ext_product in result['Extension Products']:
                 f.write("------\n")
-                f.write(f"URL: {ext_product['Extension Image URL']}\n")
+                f.write(f"URL: {ext_product['Extension Sales Volume']}\n")
                 f.write(f"Title: {ext_product['Extension Title']}\n")
                 f.write(f"Price: {ext_product['Extension Price']}\n")
                 f.write(f"Margin: {ext_product['Extension Margin']}\n")
@@ -117,6 +117,8 @@ def extract_extension_products_from_table(driver, main_product_price):
     table_rows = driver.find_elements(By.XPATH, table_rows_selector)
     
     for row in table_rows:
+        if len(extension_products) >= 5:
+            break
         try:
             extension_image = row.find_element(By.XPATH, ".//img")
             extension_image_url = extension_image.get_attribute("data-src")
@@ -126,17 +128,19 @@ def extract_extension_products_from_table(driver, main_product_price):
             
             extension_margin = (main_product_price * 0.89) - (extension_price * 250)
 
-            extension_products.append({
-                "Extension Title": extension_title,
-                "Extension Price": extension_price,
-                "Extension Sales Volume": extension_sales_volume,
-                "Extension Margin": extension_margin,
-                "Extension Image URL": extension_image_url
-            })
+            if extension_margin >= 4000 and extension_sales_volume >= 2:
+                extension_products.append({
+                    "Extension Title": extension_title,
+                    "Extension Price": extension_price,
+                    "Extension Sales Volume": extension_sales_volume,
+                    "Extension Margin": extension_margin,
+                    "Extension Image URL": extension_image_url
+                })
         except Exception as e:
             print(f"Could not extract extension product information: {e}")
 
     return extension_products
+
 
 def hover_and_click_icons(driver, searchquery, start_product_number=1):
     """
