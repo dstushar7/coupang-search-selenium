@@ -28,11 +28,11 @@ python -m venv coupang
 
 ```bash
 # On Windows
-.\coup\Scripts\activate
+.\coupang\Scripts\activate
 
 
 # On macOS/Linux
-source coup/bin/activate
+source coupang/bin/activate
 ```
 
 ### 4. Install Requirements
