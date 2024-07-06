@@ -155,7 +155,7 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
     """
     product_selector = "//ul[@id='productList']//li"
     products = driver.find_elements(By.XPATH, product_selector)
-    
+    first_time = True
     actions = ActionChains(driver)
     wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds for elements to be present
 
@@ -175,11 +175,12 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
             filter_button.click()
             time.sleep(5)
             
-            sales_volume_header_xpath = "//div[@title='' and contains(text(), 'Sales Volume')]"
+            sales_volume_header_xpath = "//div[@class='ap-table']//table//thead//tr//th[4]"
             sales_volume_header = wait.until(EC.presence_of_element_located((By.XPATH, sales_volume_header_xpath)))
             sales_volume_header.click()
             time.sleep(2)
-            sales_volume_header.click()
+            if first_time:
+                sales_volume_header.click()
             
             product_url = product.find_element(By.XPATH, ".//a").get_attribute("href")
             product_title = product.find_element(By.XPATH, ".//div[contains(@class, 'name')]").text
