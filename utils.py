@@ -181,6 +181,7 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
             time.sleep(2)
             if first_time:
                 sales_volume_header.click()
+                first_time = False
             
             product_url = product.find_element(By.XPATH, ".//a").get_attribute("href")
             product_title = product.find_element(By.XPATH, ".//div[contains(@class, 'name')]").text

@@ -43,5 +43,5 @@ pip install -r requirements.txt
 ### 5. Run the main script
 
 ```bash
-python search_coupang.py
+python main.py
 ```
