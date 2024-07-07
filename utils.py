@@ -80,7 +80,7 @@ def write_result_to_file(result, filename, product_number):
     filename += ".txt"
     with open(filename, "a", encoding="utf-8") as f:
         f.write(f"Product {product_number}\n")
-        f.write("------\n")
+        f.write("-------\n")
         f.write(f"URL: {result['Product URL']}\n")
         f.write(f"Title: {result['Product Title']}\n")
         f.write(f"Price: {result['Product Price']}\n")
@@ -88,7 +88,7 @@ def write_result_to_file(result, filename, product_number):
         f.write("\n")
         if 'Extension Products' in result:
             for ext_product in result['Extension Products']:
-                f.write("------\n")
+                f.write("----------------\n")
                 f.write(f"URL: {ext_product['Extension URL']}\n")
                 f.write(f"Title: {ext_product['Extension Title']}\n")
                 f.write(f"Price: {ext_product['Extension Price']}\n")
@@ -125,7 +125,7 @@ def extract_extension_products_from_table(driver, main_product_price):
 
             if extension_margin >= 4000 and extension_sales_volume >= 2:
                 # Click the Copy link button
-                copy_link_button = row.find_element(By.XPATH, ".//button[contains(text(), 'Copy link')]")
+                copy_link_button = row.find_element(By.XPATH, ".//button[contains(@class, 'ap-button') and contains(@class, 'ap-button--primary') and not(contains(@class, 'ap-button--s'))]")
                 copy_link_button.click()
                 time.sleep(1)  # Wait for the clipboard to update
 
