@@ -203,7 +203,7 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
             write_result_to_file(result, searchquery, product_number)
             
             # Close the filter section of extension modal
-            close_button_xpath = "//div[@title='Close' and @class='ap-modal-close']"
+            close_button_xpath = "//div[@class='ap-modal-close']"
             close_button = wait.until(EC.presence_of_element_located((By.XPATH, close_button_xpath)))
             close_button.click()
             time.sleep(2)
