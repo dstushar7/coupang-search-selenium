@@ -30,13 +30,14 @@ def main():
         # Loop through the price ranges and pages
         while min_price < max_dynamic_price:
             for page in range(min_page, max_page + 1):
+                filename = f"{search_query}, {min_price / 10000:.2f}-{max_price / 10000:.2f}"
                 url = (
                     f"https://www.coupang.com/np/search?q={search_query}&"
                     f"filterSetByUser=true&channel=user&isPriceRange=true&minPrice={min_price}&maxPrice={max_price}&"
                     f"page={page}&rating={rating}&listSize={list_size}"
                 )
                 navigate_to_url(driver, url)
-                hover_and_click_icons(driver, search_query)
+                hover_and_click_icons(driver, filename)
             
             # Update the price range
             min_price = max_price

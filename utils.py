@@ -145,7 +145,7 @@ def extract_extension_products_from_table(driver, main_product_price):
 
     return extension_products
 
-def hover_and_click_icons(driver, searchquery, start_product_number=1):
+def hover_and_click_icons(driver, filename, start_product_number=1):
     """
     Hover over each product image to reveal and click the extension icons, then extract extension product details.
     
@@ -200,7 +200,7 @@ def hover_and_click_icons(driver, searchquery, start_product_number=1):
 
             result["Extension Products"] = extract_extension_products_from_table(driver, product_price)
 
-            write_result_to_file(result, searchquery, product_number)
+            write_result_to_file(result, filename, product_number)
             
             # Close the filter section of extension modal
             close_button_xpath = "//div[@class='ap-modal-close']"
