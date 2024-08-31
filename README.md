@@ -1,6 +1,11 @@
 # Selenium Automation Project
 
-This project automates interactions with the Coupang website using Selenium and a Chrome extension.
+This project automates interactions with the Coupang website and scraping required datas using Selenium and a Chrome extension. This project was delivered to a client and I have made the code public with his consent.
+
+## What I learned in this project :
+- Automate a browser and installing a custom extension in it.
+- Crawling in a web page to fetch certain data.
+- Writing the data to a text file.
 
 ## Prerequisites
 
