@@ -118,7 +118,7 @@ def extract_extension_products_from_table(driver, main_product_price):
             extension_image = row.find_element(By.XPATH, ".//img")
             extension_image_url = extension_image.get_attribute("data-src")
             extension_title = row.find_element(By.XPATH, ".//div[@class='ap-copy-content__txt']").text
-            extension_price = float(row.find_element(By.XPATH, ".//td[3]/div").text.strip())
+            extension_price = float(row.find_element(By.XPATH, ".//td[3]/div").text.strip()) * 250
             extension_sales_volume = int(row.find_element(By.XPATH, ".//td[4]/div").text.strip())
             
             extension_margin = (main_product_price * 0.89) - (extension_price * 250)
@@ -145,7 +145,7 @@ def extract_extension_products_from_table(driver, main_product_price):
 
     return extension_products
 
-def hover_and_click_icons(driver, filename, start_product_number=1):
+def hover_and_click_icons(driver, filename, start_product_number):
     """
     Hover over each product image to reveal and click the extension icons, then extract extension product details.
     
@@ -217,6 +217,7 @@ def hover_and_click_icons(driver, filename, start_product_number=1):
             product_number += 1
         except Exception as e:
             print(f"Could not click the icon or close button for a product: {e}")
+    return product_number
 
 
 def get_increment(price):
