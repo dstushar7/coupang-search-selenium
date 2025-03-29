@@ -1,7 +1,7 @@
 from utils import create_chrome_options, initialize_driver, close_tutorial_tab, navigate_to_url, hover_and_click_icons, get_increment
 
 # Path to your ChromeDriver executable
-CHROME_DRIVER_PATH = "./chromedriver.exe"
+CHROME_DRIVER_PATH = "./chromedriver"
 
 # Path to your Chrome extension .crx file
 EXTENSION_PATH = "./AliPrice-Shopping-Assistant-for-1688.crx"
